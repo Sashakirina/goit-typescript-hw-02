@@ -1,0 +1,18 @@
+.searchInput {
+	width: 250px;
+	height: 40px;
+	border-radius: 8px;
+	border: none;
+	background-color: #1a1a1a;
+	color: rgb(240, 240, 240);
+}
+.searchForm {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	align-items: center;
+}
+.searchInput:hover,
+.searchInput:focus {
+	background-color: #3b3b3b;
+}

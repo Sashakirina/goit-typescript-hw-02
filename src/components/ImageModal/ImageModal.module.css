@@ -1,0 +1,69 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(26, 25, 25, 0.75);
+}
+.modal {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	background: rgba(26, 25, 25, 0.75);
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	border-radius: 4px;
+	outline: none;
+	padding: 20px;
+}
+
+.modal::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #444343;
+}
+
+.modal::-webkit-scrollbar {
+	width: 12px;
+	background-color: #444343;
+}
+
+.modal::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #1d1b1b;
+}
+
+.modalWrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.picture {
+	align-self: center;
+	max-width: 80%;
+	padding: auto;
+}
+
+.closeIconWrap {
+	padding: 8px;
+	align-self: flex-end;
+}
+.closeIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.title {
+	width: 70%;
+	align-self: center;
+}
+.details {
+	width: 70%;
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
+}
