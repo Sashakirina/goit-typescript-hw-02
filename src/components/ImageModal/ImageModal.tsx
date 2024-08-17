@@ -1,10 +1,11 @@
 import Modal from "react-modal";
 import { IoMdClose } from "react-icons/io";
 import style from "./ImageModal.module.css";
+import { ImageModalProps } from "../../types";
 
 Modal.setAppElement("#root");
 
-function ImageModal({ modalIsOpen, pictures, closeModal }) {
+const ImageModal: React.FC<ImageModalProps> = ({ modalIsOpen, pictures, closeModal }) => {
 	const { description, urls, alt_description, likes, user } = pictures;
 	return (
 		<Modal

@@ -7,7 +7,9 @@ export interface Images {
         small: string;
       };
   likes: number
-  user: string
+  user: {
+    name: string
+  } 
 }
 
 export interface ApiResponse {
@@ -40,4 +42,10 @@ export interface ImageCardProps {
 
 export interface LoadMoreBtnProps {
   handleLoadMore: HandleVoid
+}
+
+export interface ImageModalProps {
+  modalIsOpen: boolean
+  pictures: Images
+  closeModal: HandleVoid
 }
